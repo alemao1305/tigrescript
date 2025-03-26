@@ -1,0 +1,19 @@
+[package]
+name = "minilang"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+logos = "0.12"
+inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "master" }
+wasm-encoder = "0.20"
+dirs = "4.0"
+thiserror = "1.0"
+
+[lib]
+name = "minilang"
+path = "src/lib.rs"
+
+[[bin]]
+name = "minilang"
+path = "src/main.rs"
